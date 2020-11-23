@@ -2,7 +2,10 @@ const sendClient = require("./client/sendClient");
 const receiveClient = require("./client/receiveClient");
 let receive = new receiveClient("10002", "cxldb");
 
+// 打印接收到的消息
 receive.on("message", msg => {
+    // msg.type表示消息类型
+    // enter：进场消息、chatmsg：弹幕消息、dgb：送礼消息
     console.log(msg);
 });
 
