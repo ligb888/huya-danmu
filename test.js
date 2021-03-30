@@ -1,5 +1,6 @@
 const sendClient = require("./client/sendClient");
 const receiveClient = require("./client/receiveClient");
+//设置平台和房间号，这里10002指虎牙，cxldb是房间号
 let receive = new receiveClient("10002", "cxldb");
 
 // 打印接收到的消息
